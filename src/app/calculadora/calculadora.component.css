@@ -1,15 +1,24 @@
-
-
+.cont{
+    margin: 0 auto;
+}
 .btnConverter {
   background-color:  rgb(71, 56, 36);
   border: none;
-  border-radius: 50%;
   color: white;
   padding: 20px;
-  text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 0 auto;
   cursor: pointer;
+  border-radius: 30%;
 }
+
+.w3-border {
+    border-radius: 40%;
+}
+
+.w3-input {
+  text-align: center;
+  margin: 0 auto;
+}
+
