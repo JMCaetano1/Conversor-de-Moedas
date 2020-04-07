@@ -1,16 +1,16 @@
-<h1> Conversor de moedas </h1><br>
+<h1 class="title"> Currency Converter </h1><br>
 
 <div class="cont">
-     <input (click)="btnSoma($event)" id="btnSoma" type="button" class="btnConverter" value="SOMA">
-     <input (click)="btnSubtracao($event)"  id="btnSubtracao" type="button" class="btnConverter" value="SUBTRAÇÃO">
-     <input (click)="btnMultiplicacao($event)" id="btnMultiplicacao" type="button" class="btnConverter" value="MULTIPLICAÇÃO">
-     <input (click)="btnDivisao($event)" id="btnDivisao" type="button" class="btnConverter" value="DIVISÃO">
+     <input (click)="btnLibra($event)" id="btnLibra" type="button" class="btnConverter" value="£">
+     <input (click)="btnDolar($event)"  id="btnDolar" type="button" class="btnConverter" value="$">
+     <input (click)="btnEuro($event)" id="btnEuro" type="button" class="btnConverter" value="€">
+     <input (click)="btnYen($event)" id="btnYen" type="button" class="btnConverter" value="¥">
 </div>
-
-<div class="cont">
+<br><br>
+<div>
      <form id="formCal"  class="w3-container">
-          <input (keyup)="saveValue($event)"  class="w3-input w3-border" type="text" style="width:135px"><br>
-          <input  class="w3-input w3-border" type="text" style="width:135px" value="{{ calculo }}">
+          <input (keyup)="saveValue($event)"  class="w3-input w3-border" type="text" style="width:200px"><br>
+          <input  class="w3-input w3-border" type="text" style="width:200px" value="{{ str }}{{ result | currency }}">
      </form>
      <br>
 </div>

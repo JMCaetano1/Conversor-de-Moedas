@@ -1,17 +1,32 @@
+.title {
+  font-size: 50px;
+  justify-content: center;
+  width: 401px;
+  height: 150px;
+  margin: 0 auto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
 .cont{
     margin: 0 auto;
+    width: 550px;
+    justify-content: center;
+    display: flex;
 }
 .btnConverter {
-  background-color:  rgb(71, 56, 36);
+  background-color:  rgb(24, 23, 22);
   border: none;
   color: white;
   padding: 20px;
   text-decoration: none;
-  font-size: 16px;
-  margin: 0 auto;
+  font-size: 70px;
   cursor: pointer;
   border-radius: 30%;
+  margin-left: 10px;
 }
+/* .btnConverter:not(:last-child){
+  margin-left: 10px;
+} */
 
 .w3-border {
     border-radius: 40%;
@@ -19,7 +34,9 @@
 
 .w3-input {
   text-align: center;
+  width: 50%;
   margin: 0 auto;
+  font-size: 30px;
 }
 
- 
+

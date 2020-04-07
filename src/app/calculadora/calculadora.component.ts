@@ -10,27 +10,36 @@ import { ValueTransformer } from '@angular/compiler/src/util';
 export class CalculadoraComponent implements OnInit {
 
 val:number = 0;
-result:number = 10;
-calculo:number;
+result:number;
+calc:number;
+str:any;
 
 saveValue(event) {
      this.val = Number(event.target.value);
 }
 
-btnMultiplicacao(event){
-   this.calculo = this.val * this.result;
+btnLibra(event){
+  this.calc = 6.63
+  this.result = this.val * this.calc;
+  this.str = "R";
 }
 
-btnDivisao(event){
-  this.calculo = this.val / this.result;
+btnDolar(event){
+  this.calc = 5.23
+  this.result = this.val * this.calc;
+ this.str = "R";
 }
 
-btnSubtracao(event){
-  this.calculo = this.val - this.result;
+btnEuro(event){
+  this.calc = 5.69
+  this.result = this.val * this.calc;
+ this.str = "R";
 }
 
-btnSoma(event){
-  this.calculo = this.val + this.result;
+btnYen(event){
+  this.calc = 0.048
+  this.result = this.val * this.calc;
+ this.str = "R";
 }
 
 
